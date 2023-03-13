@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convert to Uppercase</title>
+</head>
+<body>
+  <div style="text-align:center;">
+    <h1>Convert to Uppercase</h1>
+    <form action="/convert" method="POST">
+      <input type="text" name="string" placeholder="Enter a string">
+      <br><br>
+      <button type="submit">Convert</button>
+      {% if converted_string %}
+      <button type="button" onclick="location.href='/';">Convert Again</button>
+      {% endif %}
+    </form>
+  </div>
+</body>
+</html>
